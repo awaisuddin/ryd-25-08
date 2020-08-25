@@ -1,0 +1,834 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Only Tab Gallery Demo</title>
+<style>
+
+body{
+	background-color:#f2f2f2;
+	font-family: sans-serif;
+}input,a,button{
+	outline:none;
+}
+html, body {
+  position: relative;
+  width: 100%;
+  
+  height: 100%;}
+
+
+div h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #292059;
+}
+
+
+element.style {
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+section {
+	position: relative;
+    display: block;
+	left: 5px;
+	right: 5px;
+}
+body {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    background-color: #fff;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum', "tnum";
+}
+html {
+    --antd-wave-shadow-color: #1890ff;
+    --scroll-bar: 0;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: aliceblue;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #ccccff;
+    border-radius: 5px;
+}
+::selection {
+    color: #fff;
+    background: #1890ff;
+}
+.morebutton {
+  padding: 3px 10px;
+  margin-bottom: -20px;
+  top: 100px;
+  border: none;
+  color: white;
+  background-color: #292059;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.queue {
+  overflow-x: scroll;
+  display: flex;}
+.queue img {
+  padding-right: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.button {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button,input,a{
+	outline: none;	cursor: pointer;}
+.common_cards {
+  margin-bottom: 15px;}
+
+.common_cards li {
+  min-width: 170px; 
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px #b3b3b3;
+  background-color: #DCDCDC;
+  padding: 2px 8px 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8px;
+  justify-content: center;
+  color: #292059;
+  min-height: 120px;
+  max-height: 150px;
+  align-items: center;
+  cursor: pointer;
+  }
+
+
+
+.cardSection_expand__2fOq9 {
+	list-style: none;
+  padding: 0;
+  display: flex;
+  background-color: #eff3ff;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.3rem; 
+  justify-content: space-between; 
+  box-shadow: 0 2px 8px #b3b3b3;
+  overflow: auto;
+  min-height: 600px;
+}
+.common_cards li > * {
+  flex-basis: 100%;}
+.common_cards li img {
+  width: 150px ;
+  height: 50px;
+  margin-left: -20px;
+  margin-top: 10px;
+  margin-bottom: 0px;}
+.common_cards li p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 100px;
+  font-size: 0.75rem;
+  align-self: center;}
+.common_cards li span {
+  font-weight: 700;}
+.common_cards h2 {
+  font-size: 1.1rem;
+  
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0;
+  color: #292059;
+  font-weight: 600;}
+.common_cards div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;}
+.common_cards div h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #292059;}
+
+  .common_cards div h1 {
+    font-size: 1.3rem;  }
+  .common_cards li {
+    width: 150px;
+    margin: 5px 5px;
+    padding-top: 3px;
+  }
+  .common_cards li p {
+    font-size: 0.65rem;
+  }
+  .common_cards h2 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    padding: 3px 0;
+  }
+
+.common_cards2 {
+  margin-bottom: 30px;}
+
+  
+ 
+.flashcards_li {
+  cursor: pointer;
+  min-width: 170px; 
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px #b3b3b3;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8px; 
+  justify-content: center;
+  color: #292059;
+  min-height: 120px;
+  max-height: 150px;
+  align-items: center;}
+.flashcards_li > * {
+  flex-basis: 100%;}
+
+.flashcards_li p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  font-size: 0.75rem;
+  align-self: center;}
+.flashcards_li span {
+  font-weight: 700;}
+.flashcards_li h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid #292059;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #292059;
+  font-weight: 600;
+  background-color: #eff3ff;}
+  
+
+  
+.flashcards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;}
+.flashcards h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #292059;}
+
+.flashcards h1 {
+    font-size: 1.3rem;}
+.flashcards_li {
+    min-width: 150px;
+    margin: 5px 5px;
+    padding-top: 3px;}
+.flashcards_li p {
+    font-size: 0.65rem; }
+.flashcards_li h2 {
+    font-size: 1rem;
+    padding: 3px 0;}
+	
+.flashSection_expand__2-dei {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  background-color: #eff3ff;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.3rem; /*check*/
+  justify-content: space-between; /*check*/
+  box-shadow: 0 2px 8px #b3b3b3;
+  overflow: auto;
+  min-height: 600px;
+}
+.modl{
+  position: fixed;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  padding: 5%;
+  transition: 0.5s ease;
+  background-color: #000000;}
+.Card {
+  margin: 5%;
+  margin-bottom: 30px;}
+
+.Card li {
+  box-shadow: 0 2px 8px #b3b3b3;
+  min-width: 170px;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 0 8px 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #292059;}
+.Card li > * {
+  flex-basis: 100%;}
+.Card li p {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+  font-size: 0.75rem;
+  align-self: center;}
+.Card li a {
+  flex-basis: 50%;
+  align-self: flex-end;
+  background-color: #292059;
+  color: white;
+  text-align: center;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  padding: 0.15rem;
+  font-size: 0.82rem;
+  margin-top: 7px;}
+.Card li span {
+  font-weight: 700;}
+.Card h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0px 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  color: #292059;
+  font-weight: 600;}
+.Card div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;}
+.Card div h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #292059;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop View */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body { position: relative; }
+
+.cards22 {
+  max-width: 70px;
+  display: block;
+  padding: 6px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #0D4CAB;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  
+}
+
+
+
+svg {
+  fill: red;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: 'helvetive neue', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin-top:30px;
+}
+
+.thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+}
+
+ul {
+  text-align: center;
+
+}
+.thumbnails li {
+  display: inline-block;
+  width: 18%;
+  height: 18%;
+  padding: 0 4%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumbnails li:hover .item-hugger { background: #f2f2f2; }
+
+.thumbnails li:hover .item-hugger .title { color: #000; }
+
+.thumbnails input[name="select"] { display: none; }
+
+.thumbnails .item-hugger {
+  position: relative;
+  height: auto;
+  margin: 30px 0;
+  background: #ffffff;
+  
+  transition: all 150ms ease-in-out;
+}
+
+.thumbnails label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.thumbnails .title {
+margin-top: 8px;
+  margin-left: 1px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  transition: all 150ms linear;
+}
+
+.thumbnails .thumb-image {
+  height: 100px;
+  padding: 20px 0;
+}
+
+.thumbnails .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  opacity: 0;
+  transition: all 150ms linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thumbnails .content .title {
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.thumbnails input[name="select"]:checked + .item-hugger {
+  margin: 0;
+  background: white;
+}
+
+.thumbnails input[name="select"]:checked ~ .content { opacity: 1; }
+
+.white-box {
+  background: white;
+  height: 500px;
+}
+
+
+
+
+
+
+/* Mobile View */
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body { position: relative; }
+
+.cards22 {
+  max-width: 42px;
+  display: block;
+  padding: 6px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #0D4CAB;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  
+}
+
+svg {
+  fill: red;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: 'helvetive neue', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin-top:30px;
+}
+
+.thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+}
+
+ul {
+  text-align: center;
+
+}
+.thumbnails li {
+  display: inline-block;
+  
+  width: 18%;
+  height: 18%;
+  padding: 0 4%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumbnails li:hover .item-hugger { background: #f2f2f2; }
+
+.thumbnails li:hover .item-hugger .title { color: #000; }
+
+.thumbnails input[name="select"] { display: none; }
+
+.thumbnails .item-hugger {
+  position: relative;
+  height: 100px;
+  margin: 50px 0;
+  background: #ffffff;
+  
+  transition: all 150ms ease-in-out;
+}
+
+.thumbnails label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.thumbnails .title {
+margin-top: 8px;
+  font-size: 8px;
+  text-align: center;
+  color: #555;
+  transition: all 150ms linear;
+}
+
+.thumbnails .thumb-image {
+  height: 100px;
+  padding: 20px 0;
+}
+
+.thumbnails .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  opacity: 0;
+  transition: all 150ms linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thumbnails .content .title {
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.thumbnails input[name="select"]:checked + .item-hugger {
+  margin: 0;
+  background: white;
+}
+
+.thumbnails input[name="select"]:checked ~ .content { opacity: 1; }
+
+.white-box {
+  background: white;
+  height: 500px;
+}
+
+
+
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="thumbnails">
+	  
+	  
+	  
+	    
+		<li>
+		  <input type="radio" name="select" id="topic_card1">
+		  <div class="item-hugger">
+		    <img class="cards22" src="svg/bulb.svg" alt="">
+			<div class="title">Suggested<br>Topics</div>
+			<label for="topic_card1"></label>
+			<BR>
+		  </div>
+		  <div class="content">
+			
+			
+			
+			
+			<div class="common_cards"> 
+            <div class="title">Suggested Topics</div>
+      <ul id="suggestedtopics_box"> 
+        <li><img src="img.jpg" alt="img.jpg"><h2 >Geography</h2><p><span>10 Questions</span>  <span>2 Hr 30 Min</span></p></li> 
+        <li><img src="img.jpg" alt="img.jpg"> <h2>Economics</h2><p><span>10 Questions</span><span>2 Hr</span></p></li> 
+        <li><img src="img.jpg" alt="img.jpg"><h2>History</h2><p> <span>10 Questions</span><span>2 Hr</span> </p> </li> 
+        <li><img src="img.jpg" alt="img.jpg"><h2>Politics</h2><p><span>10 Questions</span><span>2 Hr 30 Min</span></p></li> 
+		
+     </ul> 
+	 <button onclick="suggestedtopics()" id="btn1" class="morebutton button">More</button>
+  </div> 
+			
+			
+		  </div>
+		</li>
+		
+		
+		
+		
+		<li class="is-active">
+		  <input type="radio" name="select" id="topic_card2" checked>
+		  <div class="item-hugger">
+		    <img class="cards22" src="svg/book.svg" alt="">
+			<div class="title">Suggested<br>Modules</div>
+			<label for="topic_card2"></label>
+		  </div>
+		  <div class="content">
+		  
+		    
+			<div class="title">Suggested Modules</div>			
+		   <div class="common_cards"> 
+   
+    <ul id="modules_box"> 
+     <li><h2 style="margin-top: 35px;">Computer Graphics</h2></li> 
+     <li><h2 style="margin-top: 35px;">Communication Systems</h2></li> 
+     <li><h2 style="margin-top: 25px;">Database Management System</h2></li> 
+     <li><h2 style="margin-top: 35px;">Computer Architecture</h2></li> 
+	 
+   </ul> 
+   <button onclick="modules()" id="btn2" class="morebutton button">More</button>
+ </div> 
+		  
+		  </div>
+		</li>
+		
+		
+		
+		
+		<li>
+		  <input type="radio" name="select" id="topic_card3">
+		  <div class="item-hugger">
+		    <img class="cards22" src="svg/card.svg" alt="">
+			<div class="title">Flash Cards</div>
+			<label for="topic_card3"></label>
+		  </div>
+		  <div class="content">
+			
+			
+			<div class="title">Flash Cards</div>	
+			<div class="common_cards2" id="flash"> 
+	    
+		<ul id="flashcards_box" class="flashcards_ul"> 
+		  <li class="flashcards_li"><h2 style="margin-top: 45px;">Chemistry</h2></li> 
+		  <li class="flashcards_li"><h2 style="margin-top: 45px;">Physics</h2></li> 
+		  <li class="flashcards_li"><h2 style="margin-top: 45px;">Biology</h2></li> 
+		  <li class="flashcards_li"><h2 style="margin-top: 45px;">Mathematics</h2></li> 
+		  
+		</ul> 
+		<button onclick="flashcard()" id="btn3" class="morebutton button">More</button> 
+   </div> 
+			
+		  </div>
+		</li>
+		
+		
+		
+		
+		<li>
+		  <input type="radio" name="select" id="topic_card4">
+		  <div class="item-hugger">
+		    <img class="cards22" src="svg/flame.svg" alt="">
+			<div class="title">Trending<br>Topics</div>
+			<label for="topic_card4"></label>
+		  </div>
+		  <div class="content">
+			
+			
+			<div class="title">Trending Topics</div>		
+			
+			
+		  </div>
+		</li>
+		
+		<li>
+		  <input type="radio" name="select" id="topic_card5">
+		  <div class="item-hugger">
+		    <img class="cards22" src="svg/profile.svg" alt="">
+			<div class="title">Your Activity</div>
+			<label for="topic_card5"></label>
+		  </div>
+		  <div class="content">
+			
+			
+			
+			<div class="title">Your Activity</div>		
+			
+			<div class="common_cards"> 
+		
+   <ul id="activity_box" style="margin-top: 45px;" > 
+    <li><h2 style="margin-top: 45px;height: 40%; display: flex; justify-content: center; align-items: center; background-color: rgb(56, 66, 89); color: white;">Python</h2></li> 
+    <li><h2 style="margin-top: 45px;height: 40%; display: flex; justify-content: center; align-items: center; background-color: rgb(28, 70, 72); color: white;">Java</h2></li> 
+    <li><h2 style="margin-top: 45px;height: 40%; display: flex; justify-content: center; align-items: center; background-color: rgb(157, 11, 40); color: white;">Rust</h2></li> 
+    <li><h2 style="margin-top: 45px;height: 40%; display: flex; justify-content: center; align-items: center; background-color: rgb(94, 59, 77); color: white;">Ruby</h2></li> 
+    
+   </ul> 
+   <button onclick="activity()" id="btn4" class="morebutton button">More</button>
+  </div> 
+			
+		  </div>
+		</li>
+		
+		
+		
+		
+	  </ul>
+	  <div class="white-box"></div>
+	</div>
+</body>
+</html>
